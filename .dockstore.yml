@@ -1,0 +1,18 @@
+version: 1.2
+tools:
+  - subclass: cwl
+    primaryDescriptorPath: /tools/Dockstore.cwl
+    name: md5sum
+    authors: 
+      - orcid: 0000-0003-4896-1858
+      - orcid: 0000-0002-6130-1021
+workflows:
+  - subclass: cwl
+    primaryDescriptorPath: /workflows/HelloWorld.cwl
+    testParameterFiles:
+      - /workflows/hello.json  
+    publish: true
+    authors:
+      - orcid: 0000-0003-4896-1858
+      - orcid: 0000-0002-6130-1021
+     
